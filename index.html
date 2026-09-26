@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta name="theme-color" content="#18242d"/>
 <title>Beijing 6D5N Private Itinerary · Max &amp; Prim</title>
 <style>
 :root{--ink:#18242d;--cream:#f5f1e8;--paper:#fff;--red:#9b3b32;--gold:#b89051;--muted:#66727a;--line:#e4ddd2;--map:#1677ff}
@@ -121,6 +122,264 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #c5
 .photo{background-position:center 48%}
 #day4 .photo{background-position:center 42%}
 #day3 .photo{background-position:center 46%}
+
+
+/* v10 MOBILE-FIRST OVERRIDE — optimized for phone usage */
+@media (max-width: 760px){
+  html{scroll-padding-top:58px}
+  body{padding-bottom:76px;font-size:16px;line-height:1.45}
+  .topnav{height:52px}
+  .navinner{padding:8px 10px;gap:7px}
+  .brandjump{font-size:11px}
+  .navpill{padding:8px 10px;font-size:10px;min-height:34px;display:flex;align-items:center}
+
+  .cover{
+    height:auto;min-height:calc(100svh - 52px);
+    padding:42px 20px 26px;
+    background-position:center;
+  }
+  .cover h1{font-size:clamp(48px,15vw,68px);line-height:.92;margin:12px 0 16px}
+  .lead{font-size:16px;line-height:1.45;max-width:94%}
+  .coverstats{grid-template-columns:1fr 1fr!important;gap:12px;margin-top:36px}
+  .coverstats div{padding-top:9px}
+  .coverstats b{font-size:15px}
+  .coverstats span{font-size:10px;line-height:1.35;display:block}
+
+  .wrap{padding:28px 14px 72px}
+  .note{font-size:12px;padding:13px 14px;margin-bottom:18px}
+  .intro{display:block;margin-bottom:22px}
+  .introcard{padding:20px;border-radius:18px;margin-bottom:12px}
+  .introcard h2{font-size:30px}
+  .introcard p{font-size:13px}
+  .hotels{gap:10px}
+  .hotel{padding:17px;border-radius:16px}
+  .hotel h3{font-size:17px}
+  .hotel p{font-size:12px}
+
+  /* Mobile trip-at-a-glance becomes horizontal swipe instead of tall grid */
+  .glance{
+    display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;
+    gap:10px!important;margin:0 -14px 26px!important;padding:0 14px 8px!important;
+    scrollbar-width:none
+  }
+  .glance::-webkit-scrollbar{display:none}
+  .glance>div{
+    flex:0 0 72vw!important;min-height:132px!important;
+    scroll-snap-align:start;padding:16px 16px 38px!important
+  }
+  .glance>div small{min-height:auto!important;font-size:10px}
+  .glance>div b{font-size:16px!important;margin-top:15px!important}
+
+  .day{border-radius:19px;margin-bottom:28px;box-shadow:0 8px 24px #0000000d}
+  .photo{height:54vw;min-height:215px;max-height:300px;padding:20px 18px}
+  .photocopy span{font-size:10px}
+  .photocopy h2{font-size:30px;line-height:1.02;margin:5px 0}
+  .photocopy p{font-size:14px}
+  .photo:after{right:12px;bottom:12px;padding:7px 10px;font-size:9px}
+
+  .daybody{padding:20px 16px 20px}
+  .overview{display:block;padding-bottom:15px}
+  .overview h3{font-size:20px}
+  .mood{text-align:left;margin-top:8px;font-size:11px}
+  .story{font-size:16px;line-height:1.5;margin:17px 0}
+  .quickactions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .qbtn{justify-content:center;min-height:42px;padding:10px;font-size:11px}
+
+  .daybody>details>summary{
+    min-height:48px;padding:13px 14px;font-size:13px;border-radius:12px
+  }
+  .events{margin-top:7px}
+  .event{
+    display:block!important;padding:16px 2px!important;border-radius:0
+  }
+  .time{
+    display:inline-block;background:#f4ece7;border-radius:999px;
+    padding:5px 8px;margin-bottom:8px;font-size:11px
+  }
+  .eventtop{display:flex;align-items:flex-start!important;gap:8px}
+  .eventtop b{font-size:15px;line-height:1.35}
+  .eventmain>p{font-size:12px;line-height:1.45;margin:5px 0}
+  .mapbtn{font-size:10px;padding:7px 9px;min-height:31px;flex:0 0 auto}
+  .inlineinfo{font-size:11px;line-height:1.55;padding:10px;margin-top:10px}
+  .docbtn{font-size:10px;padding:8px 10px}
+
+  .loccard{display:block!important;margin:12px 0 6px;border-radius:14px}
+  .locphoto{height:48vw;min-height:175px;max-height:235px}
+  .loccopy{padding:14px 14px 42px!important}
+  .loctype{font-size:9px}
+  .loccopy h4{font-size:16px}
+  .locwhy{font-size:12px;line-height:1.45}
+  .locdo{font-size:11px;line-height:1.45;padding:8px}
+  .loccard:after{right:12px;bottom:10px;padding:6px 9px;font-size:9px}
+
+  /* Restaurant options become readable swipe cards */
+  .foodpick{padding:12px;margin-top:12px}
+  .foodgrid{
+    display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;
+    gap:9px;padding-bottom:4px;scrollbar-width:none
+  }
+  .foodgrid::-webkit-scrollbar{display:none}
+  .foodcard{
+    flex:0 0 78%;scroll-snap-align:start;padding:13px;min-height:120px
+  }
+  .foodcard b{font-size:12px}
+  .foodcard p{font-size:11px;line-height:1.4}
+  .foodcard small{font-size:10px}
+
+  .guide{padding:22px 18px;border-radius:19px;margin-top:30px}
+  .guide h2{font-size:26px}
+  .guidegrid{display:block!important}
+  .guidegrid>div{border-top:1px solid #ffffff1f;padding:9px 0}
+  .guidegrid p{font-size:12px}
+
+  .utilitybar{
+    bottom:10px;width:calc(100% - 20px);max-width:none;
+    justify-content:space-around;padding:6px 7px;border-radius:18px;
+    overflow:visible
+  }
+  .utilitybar button,.utilitybar a{
+    flex:1;padding:10px 5px;font-size:9px;text-align:center
+  }
+  .jumpmenu{bottom:72px;width:calc(100% - 24px);max-height:65vh;overflow:auto}
+  .jumpgrid{grid-template-columns:1fr 1fr}
+}
+
+/* Very small phones */
+@media (max-width: 390px){
+  .coverstats{grid-template-columns:1fr!important}
+  .coverstats div:nth-child(n+3){display:none}
+  .glance>div{flex-basis:82vw!important}
+  .photocopy h2{font-size:27px}
+  .foodcard{flex-basis:86%}
+}
+
+
+/* v11 — MOBILE APP-LIKE TRAVEL COMPANION */
+@media (max-width:760px){
+  :root{
+    --app-bg:#f7f8fa;
+    --app-card:#fff;
+    --app-ink:#17212b;
+    --app-muted:#68727d;
+    --app-red:#b13a2e;
+    --app-line:#e8e9eb;
+  }
+  body{background:var(--app-bg);color:var(--app-ink)}
+  .wrap{padding:18px 12px 82px}
+
+  /* Compact journey switcher: navigation, not content cards */
+  .glance{
+    gap:8px!important;margin:0 -12px 18px!important;padding:0 12px 6px!important;
+  }
+  .glance>div{
+    flex:0 0 108px!important;
+    min-height:78px!important;
+    height:78px!important;
+    padding:10px 10px 9px!important;
+    border-radius:14px!important;
+    box-shadow:none!important;
+    border:1px solid var(--app-line)!important;
+    background:#fff!important;
+  }
+  .glance>div small{
+    font-size:9px!important;line-height:1.15!important;
+    color:var(--app-red)!important;min-height:0!important;
+  }
+  .glance>div b{
+    font-size:11px!important;line-height:1.2!important;
+    margin-top:8px!important;display:block!important;
+    max-height:28px;overflow:hidden;
+  }
+  .glance>div a{
+    position:absolute!important;inset:0!important;
+    font-size:0!important;background:transparent!important;
+  }
+
+  /* Each day should fit as an app module, not a poster */
+  .day{
+    border:0!important;border-radius:16px!important;
+    box-shadow:0 2px 10px #0000000b!important;
+    margin-bottom:18px!important;background:var(--app-card)!important;
+    overflow:hidden;
+  }
+  .photo{
+    height:148px!important;min-height:148px!important;max-height:148px!important;
+    padding:14px 14px!important;background-position:center!important;
+  }
+  .photo:before{
+    background:linear-gradient(180deg,transparent 18%,rgba(9,17,23,.76) 100%)!important
+  }
+  .photocopy span{font-size:9px!important;letter-spacing:.14em!important}
+  .photocopy h2{
+    font-size:24px!important;line-height:1!important;
+    max-width:84%;margin:4px 0!important
+  }
+  .photocopy p{font-size:11px!important;line-height:1.25!important}
+  .photo:after{
+    padding:6px 8px!important;font-size:8px!important;
+    right:9px!important;bottom:9px!important
+  }
+
+  .daybody{padding:14px!important}
+  .overview{
+    display:flex!important;align-items:flex-start!important;
+    justify-content:space-between!important;gap:10px!important;
+    padding-bottom:11px!important;margin-bottom:0!important
+  }
+  .overview>div:first-child{min-width:0}
+  .overview h3{
+    font-size:15px!important;line-height:1.3!important;margin:2px 0!important
+  }
+  .overview .eyebrow{font-size:8px!important}
+  .mood{
+    flex:0 0 82px;font-size:9px!important;line-height:1.35!important;
+    margin:0!important;text-align:right!important;color:var(--app-muted)!important
+  }
+  .story{
+    font-size:13px!important;line-height:1.42!important;
+    margin:11px 0 12px!important;color:#46515c!important
+  }
+  .quickactions{gap:7px!important}
+  .qbtn{
+    min-height:38px!important;border-radius:11px!important;
+    font-size:10px!important;padding:8px!important
+  }
+  .daybody>details{margin-top:9px!important}
+  .daybody>details>summary{
+    min-height:42px!important;padding:10px 12px!important;
+    font-size:11px!important;border-radius:10px!important
+  }
+
+  /* Detailed day becomes an operational timeline */
+  .event{padding:13px 0!important}
+  .time{font-size:10px!important;padding:4px 7px!important;margin-bottom:6px!important}
+  .eventtop b{font-size:14px!important}
+  .eventmain>p{font-size:11px!important}
+  .mapbtn{min-height:34px!important}
+  .locphoto{height:132px!important;min-height:132px!important;max-height:132px!important}
+  .loccopy{padding:12px 12px 38px!important}
+  .loccopy h4{font-size:14px!important}
+  .locwhy{font-size:11px!important}
+  .locdo{font-size:10px!important}
+  .foodcard{flex-basis:82%!important;min-height:108px!important}
+
+  /* Reduce proposal-like intro footprint */
+  .introcard{padding:16px!important;margin-bottom:9px!important}
+  .introcard h2{font-size:24px!important}
+  .hotels{gap:8px!important}
+  .hotel{padding:13px!important}
+  .hotel h3{font-size:14px!important}
+
+  /* Persistent app navigation */
+  .utilitybar{
+    width:calc(100% - 16px)!important;bottom:8px!important;
+    border-radius:16px!important;padding:5px!important;
+    box-shadow:0 7px 25px #0003!important
+  }
+  .utilitybar button,.utilitybar a{
+    min-height:38px!important;border-radius:11px!important;font-size:9px!important
+  }
+}
 
 </style><link as="image" fetchpriority="high" href="images/wangfujing.webp" rel="preload"/></head>
 <body id="top">
