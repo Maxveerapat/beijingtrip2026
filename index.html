@@ -516,51 +516,29 @@ body{background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMac
   .hotel{padding:15px;border-radius:15px}.hotel h3{font-size:17px}.hotelchips{display:flex!important;flex-wrap:wrap;gap:5px!important}.hotelchips span{font-size:10px!important;padding:4px 7px!important}
   .utilitybar{left:10px!important;right:10px!important;transform:none!important;width:auto!important;bottom:8px!important;min-height:48px!important;padding:7px 10px!important;border-radius:16px!important}.utilitybar button,.utilitybar a{font-size:9px!important}
 }
-</style><style id="v19-zero-defect-responsive">
-/* V19 responsive QA: containment, alignment, intrinsic sizing, no text clipping */
-html,body{max-width:100%;overflow-x:hidden} .wrap,.day,.daybody,.events,.event,.eventmain,.eventtop,.foodpick,.foodgrid,.foodcard,.loccard,.loccopy{min-width:0;max-width:100%}
-.day{scroll-margin-top:82px}.topnav{z-index:1000}.utilitybar{z-index:1100}.jumpmenu{z-index:1090}
-/* concise day overview */
-.story{display:none!important}.keyaction{display:flex;align-items:flex-start;gap:8px;margin:12px 0 14px;padding:10px 12px;border-radius:10px;background:#fff4dd;border:1px solid #ead3a5;color:#4b4335;font-size:11px;line-height:1.4}.keyaction b{color:var(--red);white-space:nowrap}.keyaction span{min-width:0;overflow-wrap:anywhere}
-/* mini timeline generated from the exact detailed itinerary */
-.minitimeline{display:flex;gap:7px;overflow-x:auto;scroll-snap-type:x proximity;padding:3px 1px 8px;margin:11px 0 12px;scrollbar-width:none}.minitimeline::-webkit-scrollbar{display:none}.ministop{flex:0 0 auto;max-width:170px;min-width:112px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;scroll-snap-align:start}.ministop time{display:block;color:var(--red);font-size:9px;font-weight:800;line-height:1.2;margin-bottom:4px}.ministop b{display:block;font-size:10px;line-height:1.25;white-space:normal;overflow-wrap:anywhere}
-/* detailed timeline: time rail never stretches with content */
-.event{display:grid!important;grid-template-columns:64px minmax(0,1fr)!important;gap:10px!important;align-items:start!important;padding:14px 0!important}.time{align-self:start!important;justify-self:start!important;width:auto!important;height:auto!important;min-height:0!important;max-height:none!important;display:inline-flex!important;align-items:center!important;padding:5px 7px!important;border-radius:999px!important;background:#f6ecea!important;color:var(--red)!important;font:800 9px/1.15 system-ui!important;white-space:normal!important;overflow-wrap:normal!important}.eventmain{width:100%!important;min-width:0!important}.eventtop{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:8px!important;align-items:start!important;width:100%!important}.eventtop b{min-width:0!important;font-size:13px!important;line-height:1.32!important;overflow-wrap:anywhere!important}.mapbtn{justify-self:end!important;align-self:start!important;margin:0!important;white-space:nowrap!important;font-size:9px!important;padding:6px 8px!important;border:1px solid #d9d4c9!important;background:#fffdf8!important;color:var(--jade)!important}.eventmain>p{overflow-wrap:anywhere!important}
-/* nested modules stay entirely in content column */
-.foodpick,.inlineinfo,.loccard,.doc-only{width:100%!important}.foodgrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}.foodcard{height:auto!important;min-height:0!important;overflow:hidden!important}.foodcard b,.foodcard p,.foodcard small,.loccopy *{overflow-wrap:anywhere!important;word-break:normal!important}.loccard{overflow:hidden!important}
-/* cards must size to their text */
-.glance>div{height:auto!important;min-height:122px!important;overflow:visible!important;padding-bottom:38px!important}.glance>div small,.glance>div b{display:block!important;overflow:visible!important;white-space:normal!important;text-overflow:clip!important}.hotel{overflow:visible!important}.hotel h3,.hotelchips span{overflow-wrap:anywhere!important}
-/* floating bar cannot cover the last content */
-body{padding-bottom:calc(96px + env(safe-area-inset-bottom))!important}.credit{margin-bottom:26px}
-@media(max-width:760px){
- .wrap{padding-left:12px!important;padding-right:12px!important}.day{scroll-margin-top:76px}.glance{display:flex!important;overflow-x:auto!important;gap:10px!important;margin:4px -12px 22px!important;padding:0 12px 9px!important}.glance>div{flex:0 0 44vw!important;min-width:148px!important;min-height:126px!important}
- .event{grid-template-columns:68px minmax(0,1fr)!important;gap:10px!important}.time{font-size:9px!important;line-height:1.15!important;max-width:66px!important}.eventtop b{font-size:13px!important}.eventmain>p{font-size:11px!important;line-height:1.45!important}
- .foodgrid{display:flex!important;overflow-x:auto!important;gap:8px!important;scroll-snap-type:x mandatory!important;padding-bottom:3px!important}.foodcard{flex:0 0 min(78vw,280px)!important;scroll-snap-align:start!important;margin:0!important}
- .loccard{grid-template-columns:82px minmax(0,1fr)!important}.utilitybar{bottom:calc(8px + env(safe-area-inset-bottom))!important}
-}
-@media(max-width:430px){.glance>div{flex-basis:46vw!important}.event{grid-template-columns:64px minmax(0,1fr)!important}.time{max-width:62px!important}.eventtop{grid-template-columns:minmax(0,1fr) auto!important}.mapbtn{padding:6px 7px!important}.photocopy h2{font-size:24px!important;line-height:1.02!important;max-width:84%!important}}
-@media(max-width:370px){.event{grid-template-columns:58px minmax(0,1fr)!important;gap:8px!important}.time{max-width:56px!important;font-size:8.5px!important}.eventtop{grid-template-columns:1fr!important}.mapbtn{justify-self:start!important;margin-top:3px!important}.glance>div{flex-basis:70vw!important}}
 </style>
-<script id="v19-structure-fixes">
-document.addEventListener('DOMContentLoaded',function(){
- document.querySelectorAll('.day').forEach(function(day){
-   var body=day.querySelector('.daybody'), details=body&&body.querySelector(':scope > details'); if(!body||!details)return;
-   var overview=body.querySelector('.overview');
-   /* Mini timeline is generated from detailed timeline, so times can never drift apart. */
-   if(overview && !body.querySelector('.minitimeline')){
-     var mini=document.createElement('div'); mini.className='minitimeline'; mini.setAttribute('aria-label','Day timeline');
-     details.querySelectorAll(':scope .events > .event').forEach(function(ev){
-       var t=ev.querySelector(':scope > .time'), n=ev.querySelector('.eventtop b'); if(!t||!n)return;
-       var x=document.createElement('div'); x.className='ministop';
-       var tm=document.createElement('time'); tm.textContent=t.textContent.trim(); var b=document.createElement('b'); b.textContent=n.textContent.trim(); x.append(tm,b); mini.appendChild(x);
-     }); overview.insertAdjacentElement('afterend',mini);
-   }
-   /* Replace paragraph chunks with a dedicated key action, preserving explicit bold action only. */
-   var story=body.querySelector(':scope > .story');
-   if(story){var strong=story.querySelector('strong'); if(strong){var k=document.createElement('div');k.className='keyaction';k.innerHTML='<b>KEY ACTION</b><span></span>';k.querySelector('span').textContent=strong.textContent.replace(/[;:.]+$/,'').trim();story.insertAdjacentElement('afterend',k);}}
- });
-});
-</script>
+<style id="v20-food-and-collapse-fixes">
+/* V20: all meal choices visible, image-backed, no horizontal swipe */
+.foodgrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;overflow:visible!important;scroll-snap-type:none!important;padding-bottom:0!important}
+.foodcard{display:flex!important;flex-direction:column!important;flex:none!important;width:auto!important;min-width:0!important;min-height:190px!important;padding:0 0 12px!important;overflow:hidden!important;background:#fff!important}
+.foodphoto{width:100%;height:100px;object-fit:cover;display:block;background:#e8e2d8}
+.foodcard>div:not(.foodphoto-wrap),.foodcard>p,.foodcard>small{margin-left:12px!important;margin-right:12px!important}
+.foodcard>div:not(.foodphoto-wrap){margin-top:10px!important}
+.foodcard small{margin-top:auto!important;padding-top:7px!important}
+.day-collapse{display:flex;justify-content:center;margin:18px 0 2px}
+.collapse-section{border:1px solid #ded6c8;background:#fffdf8;color:#303a33;border-radius:11px;min-height:42px;padding:10px 16px;font:650 11px/1 system-ui;cursor:pointer}
+@media(max-width:760px){
+ .foodgrid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
+ .foodpick{padding:9px!important}
+ .foodcard{min-height:176px!important;border-radius:10px!important}
+ .foodphoto{height:78px!important}
+ .foodcard>div:not(.foodphoto-wrap),.foodcard>p,.foodcard>small{margin-left:8px!important;margin-right:8px!important}
+ .foodcard>div:not(.foodphoto-wrap){margin-top:8px!important}
+ .foodcard b{font-size:10px!important;line-height:1.2!important;overflow-wrap:anywhere}
+ .foodcard p{font-size:9px!important;line-height:1.3!important;margin-top:4px!important}
+ .foodcard small{font-size:8px!important;line-height:1.25!important;overflow-wrap:anywhere}
+}
+</style>
 </head>
 <body id="top">
 <div id="progress"></div>
@@ -619,9 +597,9 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Around Wangfujing</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" href="#">AMap ↗</a></div>
 <p>Optional late bite · only if hungry</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="海碗居(王府井店)" href="#"><div><b>Haiwanju · 海碗居</b></div><p>Old-Beijing noodles &amp; local dishes</p><small>王府井百货 6F  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Quanjude Wangfujing · 全聚德王府井店 北京" href="#"><div><b>Quanjude · 全聚德</b></div><p>Classic Peking duck</p><small>Wangfujing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Wangfujing local delivery 北京" href="#"><div><b>Wangfujing local delivery</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="海碗居(王府井店)" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Haiwanju · 海碗居</b></div><p>Old-Beijing noodles &amp; local dishes</p><small>王府井百货 6F  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Quanjude Wangfujing · 全聚德王府井店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Quanjude · 全聚德</b></div><p>Classic Peking duck</p><small>Wangfujing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Wangfujing local delivery 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Wangfujing local delivery</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
 </div>
-</div></div></details>
+</div></div><div class="day-collapse"><button type="button" class="collapse-section">Collapse detailed itinerary ↑</button></div></details>
 </div>
 </section>
 <section class="day" id="day2">
@@ -640,7 +618,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Breakfast near UrCove</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" href="#">AMap ↗</a></div>
 <p>Optional · keep it quick</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Yonho King Dongdan · 永和大王 北京" href="#"><div><b>Yonho King Dongdan</b></div><p>Open the exact place in AMap</p><small>永和大王  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Brasserie 1893 北京" href="#"><div><b>Brasserie 1893</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Local jianbing / baozi near Wangfujing 北京" href="#"><div><b>Local jianbing / baozi near Wangfujing</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Yonho King Dongdan · 永和大王 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yonho King Dongdan</b></div><p>Open the exact place in AMap</p><small>永和大王  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Brasserie 1893 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Brasserie 1893</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Local jianbing / baozi near Wangfujing 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Local jianbing / baozi near Wangfujing</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -678,7 +656,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Lunch near the north / Donghuamen side</b><a class="mapbtn amap-deep" data-amap-keyword="故宫神武门" href="#">AMap ↗</a></div>
 <p>Northern Chinese lunch</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="海碗居(王府井店)" href="#"><div><b>Haiwanju · 海碗居</b></div><p>Old-Beijing noodles &amp; local dishes</p><small>王府井百货 6F  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Little Yunnan · 小云南 北京" href="#"><div><b>Little Yunnan</b></div><p>Open the exact place in AMap</p><small>小云南  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Xianlaoman · 馅老满 北京" href="#"><div><b>Xianlaoman</b></div><p>Open the exact place in AMap</p><small>馅老满  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="海碗居(王府井店)" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Haiwanju · 海碗居</b></div><p>Old-Beijing noodles &amp; local dishes</p><small>王府井百货 6F  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Little Yunnan · 小云南 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Little Yunnan</b></div><p>Open the exact place in AMap</p><small>小云南  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Xianlaoman · 馅老满 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Xianlaoman</b></div><p>Open the exact place in AMap</p><small>馅老满  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -731,7 +709,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Peking duck dinner</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" href="#">AMap ↗</a></div>
 <p>Destination dinner</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Siji Minfu Forbidden City · 四季民福故宫店 北京" href="#"><div><b>Siji Minfu Forbidden City</b></div><p>Open the exact place in AMap</p><small>四季民福故宫店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Quanjude Wangfujing · 全聚德王府井店 北京" href="#"><div><b>Quanjude · 全聚德</b></div><p>Classic Peking duck</p><small>Wangfujing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Da Dong Jinbao Street · 大董金宝街店 北京" href="#"><div><b>Da Dong Jinbao Street</b></div><p>Open the exact place in AMap</p><small>大董金宝街店  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Siji Minfu Forbidden City · 四季民福故宫店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Siji Minfu Forbidden City</b></div><p>Open the exact place in AMap</p><small>四季民福故宫店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Quanjude Wangfujing · 全聚德王府井店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Quanjude · 全聚德</b></div><p>Classic Peking duck</p><small>Wangfujing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Da Dong Jinbao Street · 大董金宝街店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Da Dong Jinbao Street</b></div><p>Open the exact place in AMap</p><small>大董金宝街店  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -740,7 +718,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventtop"><b>Wangfujing after dark</b><a class="mapbtn amap-deep" data-amap-keyword="王府井步行街" href="#">AMap ↗</a></div>
 <p>Dessert · stroll · light shopping</p>
 </div>
-</div></div></details>
+</div></div><div class="day-collapse"><button type="button" class="collapse-section">Collapse detailed itinerary ↑</button></div></details>
 </div>
 </section>
 <section class="day" id="day3">
@@ -781,7 +759,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Lunch at Mutianyu</b><a class="mapbtn amap-deep" data-amap-keyword="慕田峪长城" href="#">AMap ↗</a></div>
 <p>Keep lunch efficient</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Mubus Family · 慕巴士之家 北京" href="#"><div><b>Mubus Family</b></div><p>Open the exact place in AMap</p><small>慕巴士之家  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Jingbei Yujia'ao · 京北渔家傲 北京" href="#"><div><b>Jingbei Yujia'ao</b></div><p>Open the exact place in AMap</p><small>京北渔家傲  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="The Schoolhouse at Mutianyu 北京" href="#"><div><b>The Schoolhouse at Mutianyu</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Mubus Family · 慕巴士之家 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Mubus Family</b></div><p>Open the exact place in AMap</p><small>慕巴士之家  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Jingbei Yujia'ao · 京北渔家傲 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Jingbei Yujia'ao</b></div><p>Open the exact place in AMap</p><small>京北渔家傲  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="The Schoolhouse at Mutianyu 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>The Schoolhouse at Mutianyu</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -818,7 +796,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Dinner in Sanlitun</b><a class="mapbtn amap-deep" data-amap-keyword="三里屯太古里" href="#">AMap ↗</a></div>
 <p>Contemporary dinner before drinks</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Jingzun Peking Duck · 京尊烤鸭店 北京" href="#"><div><b>Jingzun Peking Duck</b></div><p>Open the exact place in AMap</p><small>京尊烤鸭店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Bocata 北京" href="#"><div><b>Bocata</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Sanyangcai · 三样菜 北京" href="#"><div><b>Sanyangcai</b></div><p>Open the exact place in AMap</p><small>三样菜  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="京尊烤鸭店JINGZUN(春秀路店) 朝阳区春秀路太平庄南里6号楼北侧" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Jingzun Peking Duck</b></div><p>Open the exact place in AMap</p><small>京尊烤鸭店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Bocata 朝阳区东直门外大街12号" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Bocata</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="三样菜(东直门店) 东直门外新中街甲1号" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Sanyangcai</b></div><p>Open the exact place in AMap</p><small>三样菜  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -850,7 +828,7 @@ document.addEventListener('DOMContentLoaded',function(){
 </div>
 </div>
 </div>
-</div></div></details>
+</div></div><div class="day-collapse"><button type="button" class="collapse-section">Collapse detailed itinerary ↑</button></div></details>
 </div>
 </section>
 <section class="day" id="day4">
@@ -869,7 +847,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Optional brunch near Wangfujing</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" href="#">AMap ↗</a></div>
 <p>Sleep takes priority</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Yonho King Dongdan · 永和大王 北京" href="#"><div><b>Yonho King Dongdan</b></div><p>Open the exact place in AMap</p><small>永和大王  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="海碗居(王府井店)" href="#"><div><b>Haiwanju · 海碗居</b></div><p>Old-Beijing noodles &amp; local dishes</p><small>王府井百货 6F  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Brasserie 1893 北京" href="#"><div><b>Brasserie 1893</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Yonho King Dongdan · 永和大王 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yonho King Dongdan</b></div><p>Open the exact place in AMap</p><small>永和大王  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="海碗居(王府井店)" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Haiwanju · 海碗居</b></div><p>Old-Beijing noodles &amp; local dishes</p><small>王府井百货 6F  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Brasserie 1893 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Brasserie 1893</b></div><p>Open the exact place in AMap</p><small>Beijing  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -899,7 +877,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Lunch at / near Summer Palace</b><a class="mapbtn amap-deep" data-amap-keyword="颐和园" href="#">AMap ↗</a></div>
 <p>Choose experience vs speed</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Tingliguan · 听鹂馆 北京" href="#"><div><b>Tingliguan</b></div><p>Open the exact place in AMap</p><small>听鹂馆  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Fangzhuanchang No.69 Zhajiangmian · 方砖厂69号炸酱面 北京" href="#"><div><b>Fangzhuanchang No.69 Zhajiangmian</b></div><p>Open the exact place in AMap</p><small>方砖厂69号炸酱面  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Dechangyuan Restaurant · 德昌园 北京" href="#"><div><b>Dechangyuan Restaurant</b></div><p>Open the exact place in AMap</p><small>德昌园  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Tingliguan · 听鹂馆 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Tingliguan</b></div><p>Open the exact place in AMap</p><small>听鹂馆  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Fangzhuanchang No.69 Zhajiangmian · 方砖厂69号炸酱面 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Fangzhuanchang No.69 Zhajiangmian</b></div><p>Open the exact place in AMap</p><small>方砖厂69号炸酱面  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Dechangyuan Restaurant · 德昌园 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Dechangyuan Restaurant</b></div><p>Open the exact place in AMap</p><small>德昌园  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -937,7 +915,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Dinner around Gulou / Nanluoguxiang</b><a class="mapbtn amap-deep" data-amap-keyword="南锣鼓巷" href="#">AMap ↗</a></div>
 <p>Neighbourhood dinner</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Jingxiu Restaurant · 京秀餐厅 北京" href="#"><div><b>Jingxiu Restaurant</b></div><p>Open the exact place in AMap</p><small>京秀餐厅  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Xianlaoman · 馅老满 北京" href="#"><div><b>Xianlaoman</b></div><p>Open the exact place in AMap</p><small>馅老满  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Little Yunnan · 小云南 北京" href="#"><div><b>Little Yunnan</b></div><p>Open the exact place in AMap</p><small>小云南  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Jingxiu Restaurant · 京秀餐厅 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Jingxiu Restaurant</b></div><p>Open the exact place in AMap</p><small>京秀餐厅  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Xianlaoman · 馅老满 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Xianlaoman</b></div><p>Open the exact place in AMap</p><small>馅老满  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Little Yunnan · 小云南 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Little Yunnan</b></div><p>Open the exact place in AMap</p><small>小云南  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -946,7 +924,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventtop"><b>Hutong evening</b><a class="mapbtn amap-deep" data-amap-keyword="鼓楼" href="#">AMap ↗</a></div>
 <p>Optional cocktail · dessert · night walk</p>
 </div>
-</div></div></details>
+</div></div><div class="day-collapse"><button type="button" class="collapse-section">Collapse detailed itinerary ↑</button></div></details>
 </div>
 </section>
 <section class="day" id="day5">
@@ -965,7 +943,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Local breakfast</b><a class="mapbtn amap-deep" data-amap-keyword="鼓楼" href="#">AMap ↗</a></div>
 <p>Make breakfast part of the experience</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Huguosi Snacks Di'anmen · 护国寺小吃 北京" href="#"><div><b>Huguosi Snacks Di'anmen</b></div><p>Open the exact place in AMap</p><small>护国寺小吃  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Gulou Steamed Buns · 鼓楼馒头店 北京" href="#"><div><b>Gulou Steamed Buns</b></div><p>Open the exact place in AMap</p><small>鼓楼馒头店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yaoji Chaogan Gulou · 姚记炒肝 北京" href="#"><div><b>Yaoji Chaogan Gulou</b></div><p>Open the exact place in AMap</p><small>姚记炒肝  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Huguosi Snacks Di'anmen · 护国寺小吃 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Huguosi Snacks Di'anmen</b></div><p>Open the exact place in AMap</p><small>护国寺小吃  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Gulou Steamed Buns · 鼓楼馒头店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Gulou Steamed Buns</b></div><p>Open the exact place in AMap</p><small>鼓楼馒头店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yaoji Chaogan Gulou · 姚记炒肝 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yaoji Chaogan Gulou</b></div><p>Open the exact place in AMap</p><small>姚记炒肝  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -995,7 +973,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Lunch in Gulou</b><a class="mapbtn amap-deep" data-amap-keyword="鼓楼" href="#">AMap ↗</a></div>
 <p>Cheap · casual · local</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Old Xi'an Restaurant · 老西安饭庄 北京" href="#"><div><b>Old Xi'an Restaurant</b></div><p>Open the exact place in AMap</p><small>老西安饭庄  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yaoji Chaogan Gulou · 姚记炒肝 北京" href="#"><div><b>Yaoji Chaogan Gulou</b></div><p>Open the exact place in AMap</p><small>姚记炒肝  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Xianlaoman · 馅老满 北京" href="#"><div><b>Xianlaoman</b></div><p>Open the exact place in AMap</p><small>馅老满  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Old Xi'an Restaurant · 老西安饭庄 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Old Xi'an Restaurant</b></div><p>Open the exact place in AMap</p><small>老西安饭庄  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yaoji Chaogan Gulou · 姚记炒肝 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yaoji Chaogan Gulou</b></div><p>Open the exact place in AMap</p><small>姚记炒肝  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Xianlaoman · 馅老满 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Xianlaoman</b></div><p>Open the exact place in AMap</p><small>馅老满  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -1063,7 +1041,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Traditional dinner</b><a class="mapbtn amap-deep" data-amap-keyword="后海" href="#">AMap ↗</a></div>
 <p>Copper-pot / classic Beijing meat dinner</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Niujie Lao Baodu Man Gulou · 牛街老爆肚满 北京" href="#"><div><b>Niujie Lao Baodu Man Gulou</b></div><p>Open the exact place in AMap</p><small>牛街老爆肚满  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Kao Rou Ji Shichahai · 烤肉季 北京" href="#"><div><b>Kao Rou Ji Shichahai</b></div><p>Open the exact place in AMap</p><small>烤肉季  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yangfang Restaurant Shichahai · 羊房餐厅 北京" href="#"><div><b>Yangfang Restaurant Shichahai</b></div><p>Open the exact place in AMap</p><small>羊房餐厅  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Niujie Lao Baodu Man Gulou · 牛街老爆肚满 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Niujie Lao Baodu Man Gulou</b></div><p>Open the exact place in AMap</p><small>牛街老爆肚满  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Kao Rou Ji Shichahai · 烤肉季 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Kao Rou Ji Shichahai</b></div><p>Open the exact place in AMap</p><small>烤肉季  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yangfang Restaurant Shichahai · 羊房餐厅 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yangfang Restaurant Shichahai</b></div><p>Open the exact place in AMap</p><small>羊房餐厅  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -1080,7 +1058,7 @@ document.addEventListener('DOMContentLoaded',function(){
 </div>
 </div>
 </div>
-</div></div></details>
+</div></div><div class="day-collapse"><button type="button" class="collapse-section">Collapse detailed itinerary ↑</button></div></details>
 </div>
 </section>
 <section class="day" id="day6">
@@ -1099,7 +1077,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Optional quick breakfast</b><a class="mapbtn amap-deep" data-amap-keyword="南锣鼓巷" href="#">AMap ↗</a></div>
 <p>Near Crystal Orange · <b>check out by 12:00</b> and leave luggage with reception before continuing the day</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Huguosi Snacks Di'anmen · 护国寺小吃 北京" href="#"><div><b>Huguosi Snacks Di'anmen</b></div><p>Open the exact place in AMap</p><small>护国寺小吃  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Gulou Steamed Buns · 鼓楼馒头店 北京" href="#"><div><b>Gulou Steamed Buns</b></div><p>Open the exact place in AMap</p><small>鼓楼馒头店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yonho King · 永和大王 北京" href="#"><div><b>Yonho King</b></div><p>Open the exact place in AMap</p><small>永和大王  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Huguosi Snacks Di'anmen · 护国寺小吃 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/wangfujing.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Huguosi Snacks Di'anmen</b></div><p>Open the exact place in AMap</p><small>护国寺小吃  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Gulou Steamed Buns · 鼓楼馒头店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/forbidden-city.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Gulou Steamed Buns</b></div><p>Open the exact place in AMap</p><small>鼓楼馒头店  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yonho King · 永和大王 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/sanlitun.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yonho King</b></div><p>Open the exact place in AMap</p><small>永和大王  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -1136,7 +1114,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventmain">
 <div class="eventtop"><b>Final Beijing lunch</b><a class="mapbtn amap-deep" data-amap-keyword="前门大街" href="#">AMap ↗</a></div>
 <p>Heritage meal in Qianmen</p>
-<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Duyichu Shumai Qianmen · 都一处烧麦馆 北京" href="#"><div><b>Duyichu Shumai Qianmen</b></div><p>Open the exact place in AMap</p><small>都一处烧麦馆  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yijucheng Old Beijing BBQ · 壹聚晟老北京炙子烤肉 北京" href="#"><div><b>Yijucheng Old BBQ</b></div><p>Open the exact place in AMap</p><small>壹聚晟老北京炙子烤肉  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Quanjude Qianmen · 全聚德前门店 北京" href="#"><div><b>Quanjude · 全聚德</b></div><p>Classic Peking duck</p><small>Wangfujing  ·  AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">TOP 3 NEARBY PICKS</div><div class="foodgrid"><a class="foodcard amap-deep" data-amap-keyword="Duyichu Shumai Qianmen · 都一处烧麦馆 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/nanluoguxiang.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Duyichu Shumai Qianmen</b></div><p>Open the exact place in AMap</p><small>都一处烧麦馆  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Yijucheng Old Beijing BBQ · 壹聚晟老北京炙子烤肉 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/shichahai.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Yijucheng Old BBQ</b></div><p>Open the exact place in AMap</p><small>壹聚晟老北京炙子烤肉  ·  AMap ↗</small></a><a class="foodcard amap-deep" data-amap-keyword="Quanjude Qianmen · 全聚德前门店 北京" href="#"><div class="foodphoto-wrap"><img class="foodphoto" src="images/temple-of-heaven.webp" alt="Restaurant image" loading="lazy" onerror="this.src='images/wangfujing.webp'"></div><div><b>Quanjude · 全聚德</b></div><p>Classic Peking duck</p><small>Wangfujing  ·  AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -1160,7 +1138,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <div class="eventtop"><b>Depart Beijing</b><a class="mapbtn amap-deep" data-amap-keyword="北京大兴国际机场" href="#">AMap ↗</a></div>
 <p>Flight home · boarding and departure</p>
 </div>
-</div></div></details>
+</div></div><div class="day-collapse"><button type="button" class="collapse-section">Collapse detailed itinerary ↑</button></div></details>
 </div>
 </section>
 <div class="credit">Restaurant shortlist refreshed September 2026 using current local-search listings and Beijing tourism sources. Hero imagery uses Wikimedia Commons redirect URLs to reduce broken-image hotlinking; a neutral background remains if an image is temporarily unavailable. The four booking PDFs are embedded inside this single HTML file for offline access.</div>
@@ -1217,17 +1195,20 @@ document.querySelectorAll('.jumpgrid a').forEach(a=>a.addEventListener('click',(
 </script>
 <script>
 (function(){
-  function nativeUrl(keyword){
-    var k=encodeURIComponent(keyword||'');
-    var ua=navigator.userAgent||'';
-    if(/iPad|iPhone|iPod/i.test(ua)) return 'iosamap://poi?sourceApplication=BeijingTrip&name='+k;
-    return 'androidamap://poi?sourceApplication=BeijingTrip&keywords='+k+'&dev=0';
-  }
-  document.addEventListener('click',function(e){
-    var a=e.target.closest('a.amap-deep'); if(!a) return;
-    e.preventDefault();
-    var kw=a.getAttribute('data-amap-keyword'); if(!kw) return;
-    window.location.href=nativeUrl(kw);
-  });
+ function webUrl(k){return 'https://uri.amap.com/search?keyword='+encodeURIComponent(k)+'&city=北京&view=list&src=BeijingTrip&callnative=1'}
+ function nativeUrl(k){
+   var q=encodeURIComponent(k||''); var ua=navigator.userAgent||'';
+   if(/iPad|iPhone|iPod/i.test(ua)) return 'iosamap://keywordNavi?sourceApplication=BeijingTrip&keyword='+q+'&style=2';
+   return 'androidamap://keywordNavi?sourceApplication=BeijingTrip&keyword='+q+'&style=2';
+ }
+ document.addEventListener('click',function(e){
+   var collapse=e.target.closest('.collapse-section');
+   if(collapse){var d=collapse.closest('details');if(d){d.open=false;d.closest('.day').scrollIntoView({behavior:'smooth',block:'start'});}return;}
+   var a=e.target.closest('a.amap-deep'); if(!a)return;
+   e.preventDefault(); var kw=a.getAttribute('data-amap-keyword'); if(!kw)return;
+   var hidden=false; var onVis=function(){if(document.hidden)hidden=true}; document.addEventListener('visibilitychange',onVis,{once:true});
+   window.location.href=nativeUrl(kw);
+   setTimeout(function(){if(!hidden)window.location.href=webUrl(kw)},1200);
+ });
 })();
 </script></body></html>
