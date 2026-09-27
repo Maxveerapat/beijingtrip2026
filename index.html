@@ -639,7 +639,14 @@ body{padding-bottom:70px!important}
 .foodgrid{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;overflow:visible!important}
 .foodcard{width:100%!important;max-width:100%!important;min-width:0!important}
 @media(max-width:380px){.daynavgrid .navpill{font-size:8px!important;padding:6px 2px!important}.routeitem{grid-template-columns:64px minmax(0,1fr)!important}.routeconnector{padding-left:86px!important}}
-</style><meta content="exact-poi-and-photo-only" name="restaurant-link-policy"/></head>
+</style><meta content="exact-poi-and-photo-only" name="restaurant-link-policy"/><style>
+/* V7 compact editorial cards */
+.loccopy h4{font-size:9px!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:var(--red)!important;margin:0 0 3px!important}
+.locwhy{font-size:11px!important;line-height:1.35!important;color:#53616a!important;margin:0 0 7px!important}
+.locdo{font-size:10px!important;line-height:1.35!important;background:transparent!important;padding:0!important;border-radius:0!important;color:#765f3c!important}
+.locdo b{font-size:9px!important;letter-spacing:.09em!important}
+.dishvisual.fallback{font-size:9px!important;line-height:1.25!important;text-align:center!important;padding:8px!important}
+</style></head>
 <body id="top">
 <div id="progress"></div>
 <header class="cover">
@@ -684,7 +691,7 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Around Wangfujing</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" data-amap-lat="39.913479" data-amap-lon="116.412007" data-amap-poi="B000A48169" href="#">AMap ↗</a></div>
 <p>Optional late bite · only if hungry</p>
-<div class="foodpick"><div class="foodtitle">VERIFIED FOOD PICKS</div><div class="foodgrid"><a class="foodcard" data-amap-keyword="全聚德(王府井店)" data-amap-lat="39.912163" data-amap-lon="116.412032" data-amap-poi="B000A83BU7" data-link-quality="exact" href="https://ditu.amap.com/place/B000A83BU7"><div class="dishvisual"><img alt="Peking duck dish" loading="lazy" onerror="this.parentElement.classList.add('fallback');this.parentElement.textContent='DISH PHOTO'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Peking%20duck.jpg"/></div><div><b>Quanjude · 全聚德</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Classic Peking duck</p><small>Wangfujing · Exact AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">VERIFIED FOOD PICKS</div><div class="foodgrid"><a class="foodcard" data-amap-keyword="全聚德(王府井店)" data-amap-lat="39.912163" data-amap-lon="116.412032" data-amap-poi="B000A83BU7" data-link-quality="exact" href="https://ditu.amap.com/place/B000A83BU7"><div class="dishvisual fallback">RESTAURANT DISH PHOTO UNAVAILABLE</div><div><b>Quanjude · 全聚德</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Classic Peking duck</p><small>Wangfujing · Exact AMap ↗</small></a></div></div>
 </div>
 </div></div><div class="day-collapse"><button class="collapse-section" type="button">Detailed itinerary <span>−</span></button></div></details>
 </div>
@@ -704,7 +711,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Breakfast near UrCove</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" data-amap-lat="39.913479" data-amap-lon="116.412007" data-amap-poi="B000A48169" href="#">AMap ↗</a></div>
 <p>Optional · keep it quick</p>
-
 </div>
 </div>
 <div class="event">
@@ -714,9 +720,9 @@ body{padding-bottom:70px!important}
 <p>Monumental Beijing · photography</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/tiananmen.webp')"></div>
 <div class="loccopy">
-<div class="loctype">China's monumental civic heart</div>
-<h4>Why you're here</h4>
-<p class="locwhy">Beijing's vast ceremonial square, framed by Tiananmen Gate, the Great Hall of the People and the National Museum. This is the transition point between modern state Beijing and the imperial city.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">China's monumental civic heart</p>
 <div class="locdo"><b>DO HERE</b> · See the monumental scale · Photograph Tiananmen Gate · Understand Beijing's central axis</div>
 </div>
 </div>
@@ -729,9 +735,9 @@ body{padding-bottom:70px!important}
 <p>Main halls · imperial garden · architecture · history</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/forbidden-city.webp')"></div>
 <div class="loccopy">
-<div class="loctype">The imperial palace at the center of Beijing</div>
-<h4>Why you're here</h4>
-<p class="locwhy">The former palace of the Ming and Qing emperors: monumental gates, red-walled courtyards, ceremonial halls and the most important imperial architecture in the city.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">The imperial palace at the center of Beijing</p>
 <div class="locdo"><b>DO HERE</b> · Walk the central axis · Explore palace courtyards · Imperial Garden · Architecture &amp; history</div>
 </div>
 </div>
@@ -742,7 +748,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Lunch near the north / Donghuamen side</b><a class="mapbtn amap-deep" data-amap-keyword="故宫神武门" href="#">AMap ↗</a></div>
 <p>Northern Chinese lunch</p>
-
 </div>
 </div>
 <div class="event">
@@ -752,9 +757,9 @@ body{padding-bottom:70px!important}
 <p>Slow the pace · park / coffee</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/shichahai-alt.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Imperial lake garden beside the Forbidden City</div>
-<h4>Why you're here</h4>
-<p class="locwhy">One of Beijing's oldest imperial gardens, built around a lake and crowned by the White Pagoda. Here it works as a scenic decompression stop between the palace and Jingshan.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Imperial lake garden beside the Forbidden City</p>
 <div class="locdo"><b>DO HERE</b> · Lake views · White Pagoda · Slow walk · Coffee / rest</div>
 </div>
 </div>
@@ -767,9 +772,9 @@ body{padding-bottom:70px!important}
 <p>Panoramic view back across the Forbidden City</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/forbidden-city.webp')"></div>
 <div class="loccopy">
-<div class="loctype">The classic panorama over the Forbidden City</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A landscaped hill immediately north of the palace. The summit gives the defining bird's-eye view over the Forbidden City's golden roofs and Beijing's central axis.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">The classic panorama over the Forbidden City</p>
 <div class="locdo"><b>DO HERE</b> · Short uphill walk · Panoramic photography · Golden-hour city view</div>
 </div>
 </div>
@@ -782,9 +787,9 @@ body{padding-bottom:70px!important}
 <p>Shopping · Chinese and international brands</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/wangfujing.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Central Beijing's landmark shopping street</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A broad pedestrian retail district close to your first hotel, mixing large malls, international brands, Chinese retail and restaurants. Think of it as Beijing's traditional downtown shopping address.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Central Beijing's landmark shopping street</p>
 <div class="locdo"><b>DO HERE</b> · Shop · Browse malls · Chinese brands · Dessert &amp; evening stroll</div>
 </div>
 </div>
@@ -795,7 +800,7 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Peking duck dinner</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" data-amap-lat="39.913479" data-amap-lon="116.412007" data-amap-poi="B000A48169" href="#">AMap ↗</a></div>
 <p>Destination dinner</p>
-<div class="foodpick"><div class="foodtitle">VERIFIED FOOD PICKS</div><div class="foodgrid"><a class="foodcard" data-amap-keyword="四季民福烤鸭店(故宫店)" data-amap-lat="39.914525" data-amap-lon="116.402873" data-amap-poi="B0FFG9V1R9" data-link-quality="exact" href="https://ditu.amap.com/place/B0FFG9V1R9"><div class="dishvisual"><img alt="Peking duck dish" loading="lazy" onerror="this.parentElement.classList.add('fallback');this.parentElement.textContent='DISH PHOTO'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Peking%20duck.jpg"/></div><div><b>Siji Minfu Forbidden City</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Open the exact place in AMap</p><small>四季民福故宫店 · Exact AMap ↗</small></a><a class="foodcard" data-amap-keyword="全聚德(王府井店)" data-amap-lat="39.912163" data-amap-lon="116.412032" data-amap-poi="B000A83BU7" data-link-quality="exact" href="https://ditu.amap.com/place/B000A83BU7"><div class="dishvisual"><img alt="Peking duck dish" loading="lazy" onerror="this.parentElement.classList.add('fallback');this.parentElement.textContent='DISH PHOTO'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Peking%20duck.jpg"/></div><div><b>Quanjude · 全聚德</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Classic Peking duck</p><small>Wangfujing · Exact AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">VERIFIED FOOD PICKS</div><div class="foodgrid"><a class="foodcard" data-amap-keyword="四季民福烤鸭店(故宫店)" data-amap-lat="39.914525" data-amap-lon="116.402873" data-amap-poi="B0FFG9V1R9" data-link-quality="exact" href="https://ditu.amap.com/place/B0FFG9V1R9"><div class="dishvisual fallback">RESTAURANT DISH PHOTO UNAVAILABLE</div><div><b>Siji Minfu Forbidden City</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Open the exact place in AMap</p><small>四季民福故宫店 · Exact AMap ↗</small></a><a class="foodcard" data-amap-keyword="全聚德(王府井店)" data-amap-lat="39.912163" data-amap-lon="116.412032" data-amap-poi="B000A83BU7" data-link-quality="exact" href="https://ditu.amap.com/place/B000A83BU7"><div class="dishvisual fallback">RESTAURANT DISH PHOTO UNAVAILABLE</div><div><b>Quanjude · 全聚德</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Classic Peking duck</p><small>Wangfujing · Exact AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
@@ -824,9 +829,9 @@ body{padding-bottom:70px!important}
 <p>Private car · arrive close to opening</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/mutianyu.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Mountain scenery on the Great Wall</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A restored Great Wall section outside central Beijing, known for dramatic ridgelines, watchtowers and surrounding mountains. The early start is designed to make this the day's main visual experience.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Mountain scenery on the Great Wall</p>
 <div class="locdo"><b>DO HERE</b> · Walk the wall · Watchtowers · Cable car · Mountain photography</div>
 </div>
 </div>
@@ -844,7 +849,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Lunch at Mutianyu</b><a class="mapbtn amap-deep" data-amap-keyword="慕田峪长城" data-amap-lat="40.431668" data-amap-lon="116.565052" data-amap-poi="B000A09F5A" href="#">AMap ↗</a></div>
 <p>Keep lunch efficient</p>
-
 </div>
 </div>
 <div class="event">
@@ -868,9 +872,9 @@ body{padding-bottom:70px!important}
 <p>Fashion · flagships · Chinese brands</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/sanlitun.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Beijing's modern fashion &amp; lifestyle district</div>
-<h4>Why you're here</h4>
-<p class="locwhy">The opposite face of historic Beijing: a contemporary open-air retail district in Chaoyang with striking architecture, flagship stores, Chinese and international fashion, cafés and excellent people-watching.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Beijing's modern fashion &amp; lifestyle district</p>
 <div class="locdo"><b>DO HERE</b> · Fashion shopping · Flagships · Chinese brands · Architecture · Café · People-watch</div>
 </div>
 </div>
@@ -881,7 +885,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Dinner in Sanlitun</b><a class="mapbtn amap-deep" data-amap-keyword="三里屯太古里" data-amap-lat="39.934871" data-amap-lon="116.453990" data-amap-poi="B0FFFT5A1C" href="#">AMap ↗</a></div>
 <p>Contemporary dinner before drinks</p>
-
 </div>
 </div>
 <div class="event">
@@ -891,9 +894,9 @@ body{padding-bottom:70px!important}
 <p>Cocktails · people-watching</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/sanlitun.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Beijing's international dining &amp; nightlife quarter</div>
-<h4>Why you're here</h4>
-<p class="locwhy">The wider neighbourhood around Taikoo Li is one of Beijing's best-known areas for restaurants, bars, fashion and nightlife. It is where the itinerary shifts from sightseeing into contemporary city life.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Beijing's international dining &amp; nightlife quarter</p>
 <div class="locdo"><b>DO HERE</b> · Dinner · Cocktails · Bars · Modern Beijing atmosphere</div>
 </div>
 </div>
@@ -906,9 +909,9 @@ body{padding-bottom:70px!important}
 <p>Main nightclub night · exact venue selected closer to travel</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/gongti.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Beijing's major nightlife zone</div>
-<h4>Why you're here</h4>
-<p class="locwhy">The Workers' Stadium area sits next to Sanlitun and is a major after-dark entertainment cluster. The stadium anchors the district; the exact club can be chosen closer to the trip based on the event calendar.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Beijing's major nightlife zone</p>
 <div class="locdo"><b>DO HERE</b> · Nightclub · Late-night Beijing · Music &amp; nightlife</div>
 </div>
 </div>
@@ -931,7 +934,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Optional brunch near Wangfujing</b><a class="mapbtn amap-deep" data-amap-keyword="王府井" data-amap-lat="39.913479" data-amap-lon="116.412007" data-amap-poi="B000A48169" href="#">AMap ↗</a></div>
 <p>Sleep takes priority</p>
-
 </div>
 </div>
 <div class="event">
@@ -941,9 +943,9 @@ body{padding-bottom:70px!important}
 <p>DiDi west · approximately 40–50 min</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/summer-palace.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Beijing's grand imperial garden &amp; lake</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A vast royal landscape of Kunming Lake, Longevity Hill, pavilions and covered walkways. It is more relaxed and scenic than the Forbidden City, giving the trip a different kind of imperial experience.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Beijing's grand imperial garden &amp; lake</p>
 <div class="locdo"><b>DO HERE</b> · Kunming Lake · Long Corridor · Gardens · Longevity Hill · Photography</div>
 </div>
 </div>
@@ -986,9 +988,9 @@ body{padding-bottom:70px!important}
 <p>Hutongs · boutiques · snacks · photography</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/nanluoguxiang.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Historic hutong quarter with cafés, shops &amp; snacks</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A preserved hutong lane and surrounding alley network in old Beijing. The main street is lively and commercial; the side hutongs are where the neighbourhood becomes quieter, more residential and photogenic.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Historic hutong quarter with cafés, shops &amp; snacks</p>
 <div class="locdo"><b>DO HERE</b> · Hutong walk · Boutiques · Street snacks · Side alleys · Photography</div>
 </div>
 </div>
@@ -999,7 +1001,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Dinner around Gulou / Nanluoguxiang</b><a class="mapbtn amap-deep" data-amap-keyword="南锣鼓巷" data-amap-lat="39.937182" data-amap-lon="116.402394" data-amap-poi="B000A863RM" href="#">AMap ↗</a></div>
 <p>Neighbourhood dinner</p>
-
 </div>
 </div>
 <div class="event">
@@ -1026,7 +1027,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Local breakfast</b><a class="mapbtn amap-deep" data-amap-keyword="鼓楼" href="#">AMap ↗</a></div>
 <p>Make breakfast part of the experience</p>
-
 </div>
 </div>
 <div class="event">
@@ -1036,9 +1036,9 @@ body{padding-bottom:70px!important}
 <p>Courtyards · cafés · photography</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/nanluoguxiang.webp')"></div>
 <div class="loccopy">
-<div class="loctype">The quieter side of old Beijing</div>
-<h4>Why you're here</h4>
-<p class="locwhy">Step away from Nanluoguxiang's busy main lane into the surrounding grey-brick alleys, courtyard homes and small cafés. This is the more intimate neighbourhood experience the second hotel base is designed around.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">The quieter side of old Beijing</p>
 <div class="locdo"><b>DO HERE</b> · Courtyard lanes · Photography · Cafés · Slow neighbourhood walk</div>
 </div>
 </div>
@@ -1056,7 +1056,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Lunch in Gulou</b><a class="mapbtn amap-deep" data-amap-keyword="鼓楼" href="#">AMap ↗</a></div>
 <p>Cheap · casual · local</p>
-
 </div>
 </div>
 <div class="event">
@@ -1066,9 +1065,9 @@ body{padding-bottom:70px!important}
 <p>Imperial garden · lake · White Pagoda views</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/shichahai-alt.webp')"></div>
 <div class="loccopy">
-<div class="loctype">An imperial garden of lake, willows &amp; the White Pagoda</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A former imperial garden immediately northwest of the Forbidden City. Its lake, island and Tibetan-style White Pagoda create one of central Beijing's most distinctive landscapes.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">An imperial garden of lake, willows &amp; the White Pagoda</p>
 <div class="locdo"><b>DO HERE</b> · Imperial garden · Lake walk · White Pagoda views · Photography</div>
 </div>
 </div>
@@ -1081,9 +1080,9 @@ body{padding-bottom:70px!important}
 <p>Local shopping · gifts · snacks</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/yandai-xiejie.webp')"></div>
 <div class="loccopy">
-<div class="loctype">A compact historic shopping lane</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A narrow old commercial hutong leading toward Shichahai, lined with traditional-style storefronts, small shops, snacks and souvenirs. It works best as a browse rather than a major sightseeing stop.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">A compact historic shopping lane</p>
 <div class="locdo"><b>DO HERE</b> · Local gifts · Snacks · Browse small shops · Street photography</div>
 </div>
 </div>
@@ -1096,9 +1095,9 @@ body{padding-bottom:70px!important}
 <p>Lakeside walk · café · couple time</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/shichahai.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Historic lakes in the heart of old Beijing</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A chain of lakes surrounded by hutongs, willow-lined paths, cafés and historic neighbourhoods. Late afternoon is ideal: the water softens the pace before sunset and dinner.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Historic lakes in the heart of old Beijing</p>
 <div class="locdo"><b>DO HERE</b> · Lakeside walk · Café · Couple time · Sunset · Photography</div>
 </div>
 </div>
@@ -1111,9 +1110,9 @@ body{padding-bottom:70px!important}
 <p>Stay through blue hour</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/shichahai.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Blue hour over Beijing's historic lakes</div>
-<h4>Why you're here</h4>
-<p class="locwhy">Stay as daylight fades and the lakeside shifts from sightseeing to evening atmosphere. This is intentionally one of the slower, more romantic moments of the trip.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Blue hour over Beijing's historic lakes</p>
 <div class="locdo"><b>DO HERE</b> · Sunset · Blue-hour photos · Lakeside walk · Slow down</div>
 </div>
 </div>
@@ -1124,7 +1123,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Traditional dinner</b><a class="mapbtn amap-deep" data-amap-keyword="后海" data-amap-lat="39.942603" data-amap-lon="116.385357" data-amap-poi="B0FFFF7SW7" href="#">AMap ↗</a></div>
 <p>Copper-pot / classic Beijing meat dinner</p>
-
 </div>
 </div>
 <div class="event">
@@ -1134,9 +1132,9 @@ body{padding-bottom:70px!important}
 <p>Cocktails · bars · live music</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/shichahai.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Old Beijing after dark</div>
-<h4>Why you're here</h4>
-<p class="locwhy">The lanes around the Drum Tower and Houhai lake become an easy-going nightlife area after dinner, with cocktail bars, small venues and live music rather than the large-club atmosphere of Gongti.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Old Beijing after dark</p>
 <div class="locdo"><b>DO HERE</b> · Cocktails · Bars · Live music · Night walk</div>
 </div>
 </div>
@@ -1159,7 +1157,6 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Optional quick breakfast</b><a class="mapbtn amap-deep" data-amap-keyword="南锣鼓巷" data-amap-lat="39.937182" data-amap-lon="116.402394" data-amap-poi="B000A863RM" href="#">AMap ↗</a></div>
 <p>Near Crystal Orange · <b>check out by 12:00</b> and leave luggage with reception before continuing the day</p>
-
 </div>
 </div>
 <div class="event">
@@ -1169,9 +1166,9 @@ body{padding-bottom:70px!important}
 <p>DiDi south · approximately 25–30 min</p><div class="loccard">
 <div class="locphoto imgfallback" style="background-image:url('images/temple-of-heaven.webp')"></div>
 <div class="loccopy">
-<div class="loctype">Beijing's iconic blue-roofed ceremonial complex</div>
-<h4>Why you're here</h4>
-<p class="locwhy">A vast imperial ritual complex where Ming and Qing emperors prayed for good harvests. The circular Hall of Prayer for Good Harvests is one of Beijing's most recognizable buildings.</p>
+
+<h4>WHY HERE</h4>
+<p class="locwhy">Beijing's iconic blue-roofed ceremonial complex</p>
 <div class="locdo"><b>DO HERE</b> · Hall of Prayer · Imperial symbolism · Park life · Architecture</div>
 </div>
 </div>
@@ -1196,7 +1193,7 @@ body{padding-bottom:70px!important}
 <div class="eventmain">
 <div class="eventtop"><b>Final Beijing lunch</b><a class="mapbtn amap-deep" data-amap-keyword="前门大街" href="#">AMap ↗</a></div>
 <p>Heritage meal in Qianmen</p>
-<div class="foodpick"><div class="foodtitle">VERIFIED FOOD PICKS</div><div class="foodgrid"><a class="foodcard" data-amap-keyword="全聚德(前门店)" data-amap-lat="39.896630" data-amap-lon="116.398244" data-amap-poi="B000A81B55" data-link-quality="exact" href="https://ditu.amap.com/place/B000A81B55"><div class="dishvisual"><img alt="Peking duck dish" loading="lazy" onerror="this.parentElement.classList.add('fallback');this.parentElement.textContent='DISH PHOTO'" src="https://commons.wikimedia.org/wiki/Special:FilePath/Peking%20duck.jpg"/></div><div><b>Quanjude · 全聚德</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Classic Peking duck</p><small>Wangfujing · Exact AMap ↗</small></a></div></div>
+<div class="foodpick"><div class="foodtitle">VERIFIED FOOD PICKS</div><div class="foodgrid"><a class="foodcard" data-amap-keyword="全聚德(前门店)" data-amap-lat="39.896630" data-amap-lon="116.398244" data-amap-poi="B000A81B55" data-link-quality="exact" href="https://ditu.amap.com/place/B000A81B55"><div class="dishvisual fallback">RESTAURANT DISH PHOTO UNAVAILABLE</div><div><b>Quanjude · 全聚德</b></div><div class="dishlabel">SIGNATURE / CUISINE</div><p>Classic Peking duck</p><small>Wangfujing · Exact AMap ↗</small></a></div></div>
 </div>
 </div>
 <div class="event">
