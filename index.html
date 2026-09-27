@@ -585,7 +585,16 @@ img,svg,video,canvas{max-width:100%!important;height:auto}
 .minitimeline>* ,.mini-timeline>* ,.timeline-mini>*{width:100%!important;max-width:100%!important;flex:none!important;scroll-snap-align:none!important}
 .utilitybar{max-width:calc(100vw - 16px)!important;overflow:hidden!important}
 @media(max-width:390px){.event{grid-template-columns:64px minmax(0,1fr)!important;column-gap:8px!important}.time{width:64px!important;max-width:64px!important;font-size:10px!important}.eventtop>b{flex-basis:130px!important}}
-</style></head>
+</style><style id="final-mobile-hardening">
+html,body{max-width:100%;overflow-x:hidden!important}*{box-sizing:border-box;min-width:0}.wrap,main,.day,.daybody,.events,.event,.eventmain,.loccard,.foodcard,.hotel{max-width:100%!important}
+.navinner{overflow-x:hidden!important;flex-wrap:wrap!important;white-space:normal!important}.navpill,.brandjump{white-space:normal!important}
+.glance{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;width:100%!important;overflow:visible!important}.glance>*{width:100%!important;max-width:100%!important}
+.utilitybar{width:calc(100% - 24px)!important;max-width:520px!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;overflow:hidden!important}.utilitybar button,.utilitybar a{white-space:normal!important;padding:9px 4px!important;text-align:center!important}
+.event{grid-template-columns:92px minmax(0,1fr)!important}.time{width:100%!important;overflow-wrap:anywhere!important;word-break:normal!important}.eventtop{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:start!important}.eventtop b{overflow-wrap:anywhere!important}.mapbtn{max-width:92px!important;white-space:normal!important;text-align:center!important}
+.foodgrid,.nearbygrid,.restaurant-grid{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important;width:100%!important}.foodcard{width:100%!important}
+img{max-width:100%!important;height:auto}.jumpmenu{max-width:calc(100vw - 24px)!important}.jumpgrid{grid-template-columns:1fr 1fr!important}
+@media(max-width:480px){.event{grid-template-columns:82px minmax(0,1fr)!important;gap:10px!important}.glance{grid-template-columns:1fr!important}.navinner{display:grid!important;grid-template-columns:1fr 1fr!important}.brandjump{grid-column:1/-1}.utilitybar{font-size:9px!important}}
+</style><style>.amap-unverified{pointer-events:none!important;opacity:.45!important;text-decoration:none!important}</style></head>
 <body id="top">
 <div id="progress"></div>
 <nav aria-label="Trip navigation" class="topnav">
@@ -1235,25 +1244,31 @@ document.querySelectorAll('.jumpgrid a').forEach(a=>a.addEventListener('click',(
 </script>
 <script>
 (function(){
- function webUrl(k,pid){return pid?'https://ditu.amap.com/place/'+pid:'https://uri.amap.com/search?keyword='+encodeURIComponent(k)+'&city=北京&view=list&src=BeijingTrip&callnative=1'}
- function nativeUrl(k,lat,lon){
-   var q=encodeURIComponent(k||''), ua=navigator.userAgent||'';
-   if(lat&&lon){
-     if(/iPad|iPhone|iPod/i.test(ua)) return 'iosamap://viewMap?sourceApplication=BeijingTrip&poiname='+q+'&lat='+lat+'&lon='+lon+'&dev=0';
-     return 'androidamap://viewMap?sourceApplication=BeijingTrip&poiname='+q+'&lat='+lat+'&lon='+lon+'&dev=0';
-   }
-   if(/iPad|iPhone|iPod/i.test(ua)) return 'iosamap://keywordNavi?sourceApplication=BeijingTrip&keyword='+q+'&style=2';
-   return 'androidamap://keywordNavi?sourceApplication=BeijingTrip&keyword='+q+'&style=2';
+ function webPoi(pid){return 'https://uri.amap.com/poidetail?poiid='+encodeURIComponent(pid)+'&src=BeijingTrip&callnative=1'}
+ function nativePoi(name,pid,lat,lon){
+   var q=encodeURIComponent(name||''), id=encodeURIComponent(pid||'');
+   return 'amapuri://poi/detail?poiname='+q+'&lat='+encodeURIComponent(lat||'')+'&lon='+encodeURIComponent(lon||'')+'&poiid='+id;
  }
+ document.querySelectorAll('a.amap-deep').forEach(function(a){
+   var pid=a.getAttribute('data-amap-poi'), lat=a.getAttribute('data-amap-lat'), lon=a.getAttribute('data-amap-lon');
+   if(!pid || !lat || !lon){
+     a.removeAttribute('href'); a.setAttribute('aria-disabled','true'); a.classList.add('amap-unverified');
+     if(a.classList.contains('mapbtn')) a.textContent='Map unverified';
+     return;
+   }
+   a.setAttribute('href',webPoi(pid));
+ });
  document.addEventListener('click',function(e){
    var collapse=e.target.closest('.collapse-section');
    if(collapse){var d=collapse.closest('details');if(d){d.open=false;d.closest('.day').scrollIntoView({behavior:'smooth',block:'start'});}return;}
    var a=e.target.closest('a.amap-deep'); if(!a)return;
-   e.preventDefault(); var kw=a.getAttribute('data-amap-keyword'); if(!kw)return;
-   var pid=a.getAttribute('data-amap-poi'), lat=a.getAttribute('data-amap-lat'), lon=a.getAttribute('data-amap-lon');
-   var hidden=false; var onVis=function(){if(document.hidden)hidden=true}; document.addEventListener('visibilitychange',onVis,{once:true});
-   window.location.href=nativeUrl(kw,lat,lon);
-   setTimeout(function(){if(!hidden)window.location.href=webUrl(kw,pid)},1400);
+   var pid=a.getAttribute('data-amap-poi'), lat=a.getAttribute('data-amap-lat'), lon=a.getAttribute('data-amap-lon'), kw=a.getAttribute('data-amap-keyword');
+   if(!pid || !lat || !lon){e.preventDefault();return;}
+   e.preventDefault();
+   var fallback=webPoi(pid), hidden=false;
+   var onVis=function(){if(document.hidden)hidden=true}; document.addEventListener('visibilitychange',onVis,{once:true});
+   window.location.href=nativePoi(kw,pid,lat,lon);
+   setTimeout(function(){if(!hidden)window.location.href=fallback},1200);
  });
 })();
 </script></body></html>
