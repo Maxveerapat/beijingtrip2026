@@ -618,19 +618,32 @@ body{padding-bottom:24px!important}
  .eventtop{min-width:0!important;align-items:flex-start!important}
  .eventtop b{min-width:0!important;overflow-wrap:anywhere!important}
 }
+</style><style id="v4-final-fixes">
+/* V4: single-axis mobile UI, restored navigation, synchronized mini timeline */
+html,body{max-width:100%;overflow-x:hidden!important}
+.topnav{display:block!important;position:sticky!important;top:0!important;z-index:1200!important;height:auto!important;background:rgba(20,35,45,.98)!important}
+.navinner{display:block!important;padding:8px 10px!important;overflow:hidden!important}
+.brandjump{display:block!important;color:#d64a3a!important;font:800 12px/1.2 system-ui!important;margin:0 0 7px 2px!important;text-decoration:none!important}
+.daynavgrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px!important;width:100%!important}
+.daynavgrid .navpill{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;white-space:normal!important;text-align:center!important;padding:7px 3px!important;font:700 9px/1.15 system-ui!important;border-radius:9px!important;color:#eef2f4!important;border:1px solid #ffffff25!important;text-decoration:none!important}
+.daynavgrid .navpill.active{background:#fff!important;color:#18242d!important}
+.glance,.dayselect-wrap,.desktop-day-pill,.jumpmenu{display:none!important}
+.routepreview{display:flex!important;flex-direction:column!important;width:100%!important;margin:12px 0 14px!important;border:1px solid #e7dfd1!important;border-radius:12px!important;overflow:hidden!important;background:#fff!important}
+.routeitem{display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;gap:10px!important;align-items:center!important;padding:10px 12px!important}
+.routeitem time{font:800 10px/1.15 system-ui!important;color:#c9412f!important;white-space:normal!important;overflow-wrap:anywhere!important}
+.routeitem b{display:block!important;font:750 12px/1.25 system-ui!important;overflow-wrap:anywhere!important}.routeitem small{display:block!important;margin-top:2px!important;font:400 10px/1.3 system-ui!important;color:#737970!important}
+.routeconnector{padding:4px 12px 4px 94px!important;background:#f7f3ea!important;color:#8a8e88!important;font:700 8px/1.3 system-ui!important;letter-spacing:.08em!important}
+.utilitybar{display:grid!important;position:fixed!important;left:10px!important;right:10px!important;bottom:calc(8px + env(safe-area-inset-bottom))!important;transform:none!important;width:auto!important;max-width:none!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:4px!important;padding:5px!important;border-radius:14px!important;background:rgba(20,35,45,.97)!important;border:1px solid #ffffff20!important;box-shadow:0 7px 24px #0003!important;overflow:hidden!important;z-index:1300!important}
+.utilitybar a,.utilitybar button{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;min-height:38px!important;padding:6px 2px!important;border:0!important;background:transparent!important;color:#fff!important;text-decoration:none!important;text-align:center!important;font:700 9px/1.1 system-ui!important;white-space:normal!important}
+body{padding-bottom:70px!important}
+.foodgrid{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;overflow:visible!important}
+.foodcard{width:100%!important;max-width:100%!important;min-width:0!important}
+@media(max-width:380px){.daynavgrid .navpill{font-size:8px!important;padding:6px 2px!important}.routeitem{grid-template-columns:64px minmax(0,1fr)!important}.routeconnector{padding-left:86px!important}}
 </style></head>
 <body id="top">
 <div id="progress"></div>
 <nav aria-label="Trip navigation" class="topnav">
-<div class="navinner">
-<a class="brandjump" href="#top">BEIJING 6D5N</a>
-
-
-
-
-
-
-</div>
+<div class="navinner"><a class="brandjump" href="#top">BEIJING 6D5N</a><div class="daynavgrid"><a class="navpill" href="#day1">D1 Arrival</a><a class="navpill" href="#day2">D2 Imperial</a><a class="navpill" href="#day3">D3 Great Wall</a><a class="navpill" href="#day4">D4 Summer Palace</a><a class="navpill" href="#day5">D5 Old Beijing</a><a class="navpill" href="#day6">D6 Departure</a></div></div>
 </nav>
 <header class="cover">
 <div><div class="eyebrow">PRIVATE JOURNEY · MAX &amp; PRIM · 22–27 OCTOBER 2026</div><h1>Beijing,<br/>two ways.</h1><div class="lead">Imperial landmarks and the Great Wall first. Hutongs, lakes, food and local nightlife second. Six days paced as a private couple trip rather than a checklist tour.</div></div>
@@ -643,14 +656,13 @@ body{padding-bottom:24px!important}
 <div class="hotel"><small>22–25 OCT · 3 NIGHTS</small><h3>UrCove Wangfujing</h3><div class="hotelchips"><span>Imperial Beijing</span><span>Great Wall launch</span><span>Wangfujing</span><span>Sanlitun/Gongti</span></div><a class="amap-deep" data-amap-keyword="北京天安门逸扉酒店" href="#">AMap ↗</a></div>
 <div class="hotel"><small>25–27 OCT · 2 NIGHTS</small><h3>Crystal Orange Nanluoguxiang</h3><div class="hotelchips"><span>Hutongs</span><span>Gulou</span><span>Shichahai/Houhai</span><span>local nightlife</span></div><a class="amap-deep" data-amap-keyword="桔子水晶北京南锣鼓巷酒店" href="#">AMap ↗</a></div>
 </div></section>
-
 <section class="day" id="day1">
 <div class="photo" style="background-image:linear-gradient(180deg,rgba(12,20,26,.05),rgba(12,20,26,.72)),url('images/wangfujing.webp')">
 <div class="photocopy"><span>DAY 1 · THU · 22 OCT</span><h2>ARRIVAL IN BEIJING</h2><p>A gentle first evening</p></div>
 </div>
 <div class="daybody">
 <div class="overview"><div><small>THE DAY IN ONE LINE</small></div><div class="daytags"><span>Land</span><span>Check in</span><span>Easy Wangfujing evening</span></div></div>
-<div class="quickactions">
+<div aria-label="Day timeline summary" class="routepreview"><div class="routeitem"><time>20:40</time><div><b>Beijing Capital Airport · PEK</b><small>Arrival · immigration · baggage View Air China e-ticket</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>21:45–22:45</time><div><b>UrCove Wangfujing</b><small>DiDi transfer · approximately 45–60 min View UrCove Agoda confirm</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>22:45+</time><div><b>Around Wangfujing</b><small>Optional late bite · only if hungry</small></div></div></div><div class="quickactions">
 <a class="qbtn" href="#day2">Next day </a>
 </div>
 <details><summary>Detailed itinerary</summary><div class="events">
@@ -686,7 +698,7 @@ body{padding-bottom:24px!important}
 </div>
 <div class="daybody">
 <div class="overview"><div><small>THE DAY IN ONE LINE</small></div><div class="daytags"><span>Forbidden City</span><span>City views</span><span>Peking duck</span></div></div>
-<div class="key-action"><span>KEY ACTION</span><b>Book the Forbidden City first</b></div><div class="quickactions">
+<div class="key-action"><span>KEY ACTION</span><b>Book the Forbidden City first</b></div><div aria-label="Day timeline summary" class="routepreview"><div class="routeitem"><time>07:30–08:00</time><div><b>Breakfast near UrCove</b><small>Optional · keep it quick</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>08:20–09:15</time><div><b>Tiananmen Square</b><small>Monumental Beijing · photography</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>09:40–13:00</time><div><b>Forbidden City</b><small>Main halls · imperial garden · architecture · history</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>13:15–14:15</time><div><b>Lunch near the north / Donghuamen side</b><small>Northern Chinese lunch</small></div></div></div><div class="quickactions">
 <a class="qbtn" href="#day3">Next day </a>
 </div>
 <details><summary>Detailed itinerary</summary><div class="events">
@@ -804,7 +816,7 @@ body{padding-bottom:24px!important}
 </div>
 <div class="daybody">
 <div class="overview"><div><small>THE DAY IN ONE LINE</small></div><div class="daytags"><span>Great Wall</span><span>Local-brand shopping</span><span>Gongti nightlife</span></div></div>
-<div class="key-action"><span>KEY ACTION</span><b>Pre-book the Mutianyu car</b></div><div class="quickactions">
+<div class="key-action"><span>KEY ACTION</span><b>Pre-book the Mutianyu car</b></div><div aria-label="Day timeline summary" class="routepreview"><div class="routeitem"><time>06:45–08:15</time><div><b>Mutianyu Great Wall</b><small>Private car · arrive close to opening</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>08:35–11:45</time><div><b>Mutianyu Great Wall</b><small>Wall walk · cable car · mountain scenery · photography</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>12:00–12:45</time><div><b>Lunch at Mutianyu</b><small>Keep lunch efficient</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>12:45–14:30</time><div><b>UrCove Wangfujing</b><small>Private car return</small></div></div></div><div class="quickactions">
 <a class="qbtn" href="#day4">Next day </a>
 </div>
 <details><summary>Detailed itinerary</summary><div class="events">
@@ -913,7 +925,7 @@ body{padding-bottom:24px!important}
 </div>
 <div class="daybody">
 <div class="overview"><div><small>THE DAY IN ONE LINE</small></div><div class="daytags"><span>Summer Palace</span><span>Hutong streets</span><span>Move to Nanluoguxiang</span></div></div>
-<div class="key-action"><span>KEY ACTION</span><b>No hotel breakfast:</b></div><div class="quickactions">
+<div class="key-action"><span>KEY ACTION</span><b>No hotel breakfast:</b></div><div aria-label="Day timeline summary" class="routepreview"><div class="routeitem"><time>09:30–10:00</time><div><b>Optional brunch near Wangfujing</b><small>Sleep takes priority</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>10:10–11:00</time><div><b>Summer Palace</b><small>DiDi west · approximately 40–50 min</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>11:00–14:15</time><div><b>Summer Palace</b><small>Kunming Lake · Long Corridor · gardens · Longevity Hill</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>14:15–15:00</time><div><b>Lunch at / near Summer Palace</b><small>Choose experience vs speed</small></div></div></div><div class="quickactions">
 <a class="qbtn" href="#day5">Next day </a>
 </div>
 <details><summary>Detailed itinerary</summary><div class="events">
@@ -1008,7 +1020,7 @@ body{padding-bottom:24px!important}
 </div>
 <div class="daybody">
 <div class="overview"><div><small>THE DAY IN ONE LINE</small></div><div class="daytags"><span>Neighborhood Beijing</span><span>Local food</span><span>Houhai evening</span></div></div>
-<div class="key-action"><span>KEY ACTION</span><b>smaller bars, cocktails and live music</b></div><div class="quickactions">
+<div class="key-action"><span>KEY ACTION</span><b>smaller bars, cocktails and live music</b></div><div aria-label="Day timeline summary" class="routepreview"><div class="routeitem"><time>09:00–10:00</time><div><b>Local breakfast</b><small>Make breakfast part of the experience</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>10:00–11:15</time><div><b>Nanluoguxiang side hutongs</b><small>Courtyards · cafés · photography</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>11:15–12:15</time><div><b>Drum &amp; Bell Towers</b><small>Old-Beijing streets · architecture</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>12:15–13:15</time><div><b>Lunch in Gulou</b><small>Cheap · casual · local</small></div></div></div><div class="quickactions">
 <a class="qbtn" href="#day6">Next day </a>
 </div>
 <details><summary>Detailed itinerary</summary><div class="events">
@@ -1141,7 +1153,7 @@ body{padding-bottom:24px!important}
 </div>
 <div class="daybody">
 <div class="overview"><div><small>THE DAY IN ONE LINE</small></div><div class="daytags"><span>Temple of Heaven</span><span>Qianmen shopping</span><span>Airport</span></div></div>
-<div class="quickactions">
+<div aria-label="Day timeline summary" class="routepreview"><div class="routeitem"><time>07:45–08:15</time><div><b>Optional quick breakfast</b><small>Near Crystal Orange · check out by 12:00 and leave luggage with r</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>08:20–08:50</time><div><b>Temple of Heaven</b><small>DiDi south · approximately 25–30 min</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>09:00–11:15</time><div><b>Temple of Heaven</b><small>Hall of Prayer · Echo Wall · Circular Mound · local park life</small></div></div><div class="routeconnector">THEN</div><div class="routeitem"><time>11:30–13:15</time><div><b>Qianmen &amp; Dashilan</b><small>Heritage retail · snacks · souvenirs</small></div></div></div><div class="quickactions">
 <a class="qbtn" href="#top">↑ Trip overview</a>
 </div>
 <details><summary>Detailed itinerary</summary><div class="events">
@@ -1216,8 +1228,6 @@ body{padding-bottom:24px!important}
 </section>
 <div class="credit">Beijing 6D5N · final mobile itinerary · exact AMap POIs used where branch identity was verified.</div>
 </main>
-
-
 <script>
 function openDay(id){
   const day=document.getElementById(id); if(!day)return;
@@ -1282,5 +1292,31 @@ document.querySelectorAll('.jumpgrid a').forEach(a=>a.addEventListener('click',(
    window.location.href=nativePoi(kw,pid,lat,lon);
    setTimeout(function(){if(!hidden)window.location.href=fallback},1200);
  });
+})();
+</script><div aria-label="Quick navigation" class="utilitybar"><a href="#top">Overview</a><a href="#day1">Today</a><button onclick="document.querySelector('.hotels').scrollIntoView({behavior:'smooth'})" type="button">Hotels</button><a href="javascript:window.scrollTo({top:0,behavior:'smooth'})">Top</a></div><script>
+(function(){
+  function androidIntent(name,pid,lat,lon){
+    var qs='poiname='+encodeURIComponent(name||'')+'&lat='+encodeURIComponent(lat||'')+'&lon='+encodeURIComponent(lon||'')+'&poiid='+encodeURIComponent(pid||'');
+    return 'intent://poi/detail?'+qs+'#Intent;scheme=amapuri;package=com.autonavi.minimap;end';
+  }
+  function amapUri(name,pid,lat,lon){return 'amapuri://poi/detail?poiname='+encodeURIComponent(name||'')+'&lat='+encodeURIComponent(lat||'')+'&lon='+encodeURIComponent(lon||'')+'&poiid='+encodeURIComponent(pid||'');}
+  function launch(el){
+    var pid=el.dataset.amapPoi,lat=el.dataset.amapLat,lon=el.dataset.amapLon,name=el.dataset.amapKeyword;
+    if(!(pid&&lat&&lon)) return false;
+    var ua=navigator.userAgent||'';
+    window.location.href=/Android/i.test(ua)?androidIntent(name,pid,lat,lon):amapUri(name,pid,lat,lon);
+    return true;
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a.amap-deep, a.foodcard[data-link-quality="exact"]');
+    if(!a)return;
+    if(launch(a)){e.preventDefault();e.stopImmediatePropagation();}
+  },true);
+  // Make exact food POIs use the same app-direct behavior.
+  document.querySelectorAll('.foodcard[data-link-quality="exact"]').forEach(function(a){a.classList.add('amap-deep');});
+  // active top-day state
+  var navs=[...document.querySelectorAll('.daynavgrid .navpill')];
+  var ob=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)navs.forEach(function(n){n.classList.toggle('active',n.getAttribute('href')==='#'+x.target.id);});});},{rootMargin:'-20% 0px -65% 0px'});
+  document.querySelectorAll('.day').forEach(function(d){ob.observe(d)});
 })();
 </script></body></html>
